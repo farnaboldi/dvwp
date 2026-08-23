@@ -52,7 +52,6 @@ Feel free to contribute with pull requests ;)
 
 * [Backup and Staging by WP Time Capsule < 1.21.16 - Authentication Bypass](https://wpvulndb.com/vulnerabilities/10010)
   - CVE-2020-8771
-  - NOT WORKING RIGHT NOW
 
 ### Otherz
 
