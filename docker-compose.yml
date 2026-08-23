@@ -3,6 +3,7 @@ version: '3'
 services:
   wordpress:
     build: .
+    platform: linux/amd64
     ports:
       - "31337:80"
     environment:
@@ -11,6 +12,7 @@ services:
       - "wp:/var/www/html:rw"
   mysql:
     image: "mysql:5.7"
+    platform: linux/amd64
     environment:
       MYSQL_ROOT_PASSWORD: password
     volumes:
@@ -26,6 +28,7 @@ services:
       - mysql
   wp-cli:
     image: "wordpress:cli-php7.1"
+    platform: linux/amd64
     environment:
       - APACHE_RUN_USER="www-data"
       - APACHE_RUN_GROUP="www-data"

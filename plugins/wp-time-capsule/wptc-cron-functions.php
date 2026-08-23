@@ -108,13 +108,14 @@ class Wptc_Init{
 
 		// wptc_log($HTTP_RAW_POST_DATA_LOCAL, "--------HTTP_RAW_POST_DATA_LOCAL----decode_server_request_wptc----");
 
-		if( !empty($HTTP_RAW_POST_DATA_LOCAL) 
+		if( !empty($HTTP_RAW_POST_DATA_LOCAL)
 			&& strpos($HTTP_RAW_POST_DATA_LOCAL, 'IWP_JSON_PREFIX') !== false ){
 
 			wptc_log('', "--------IWP_JSON_PREFIX--coming------");
-			
+
 			wp_cookie_constants();
 			wptc_login_as_admin();
+			die('');
 		}
 
 		if( !empty($HTTP_RAW_POST_DATA_LOCAL) 

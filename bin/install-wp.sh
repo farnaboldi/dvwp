@@ -17,7 +17,7 @@ wp plugin activate iwp-client
 wp plugin activate social-warfare 
 wp plugin activate wp-advanced-search 
 wp plugin activate wp-file-upload 
-# wp plugin activate wp-time-capsule # Causes error
+wp plugin activate wp-time-capsule
 
 # Update DB
 wp db import dump.sql
